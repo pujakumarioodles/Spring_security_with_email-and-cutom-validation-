@@ -1,0 +1,30 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+spring:  
+  datasource:
+     name: my_database
+     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/For_login_signup
+     username: root
+     password: root
+     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa: 
+   properties:
+     hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: update
+   show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: puja.kumari@oodlestechnologies.com
+    password: ndjmevxtotqqvzit
+    protocol: smtp
+    test-connection: false
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
